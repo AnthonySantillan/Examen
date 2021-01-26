@@ -1,0 +1,14 @@
+<div *ngIf="producto">
+
+    <h2>Cliente</h2>
+    <div><span>codigo: </span>{{producto.id}}</div>
+    <div>
+      <label>
+        <div><span>nombre </span>{{producto.name}}</div>
+        <span>Cantidad</span><input [(ngModel)]="producto.cantidad" placeholder="name"/>
+        <div><span>precio </span>{{producto.precio_u}}</div>
+
+      </label>
+    </div>
+  
+  </div>

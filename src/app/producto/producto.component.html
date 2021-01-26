@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-6">
+<h2>Mis productos</h2>
+
+<ul class="heroes">
+  <li *ngFor="let producto of productos"
+    [class.selected]="producto === selectedProducto"
+    (click)="onSelect(producto)">
+    <span class="badge">{{producto.id}}</span> {{producto.name}}
+    
+  </li>
+</ul>
+</div>
+<div class="col-6">
+<app-detalle-producto [producto]="selectedProducto"></app-detalle-producto>
+
+</div>
+</div>
