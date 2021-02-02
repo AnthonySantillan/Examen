@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../hero';
 
 @Component({
-  selector: 'app-hero-detail',
+  selector: 'app-maestro-detail',
   templateUrl: './maestro-detail.component.html',
   styleUrls: ['./maestro-detail.component.css']
 })
